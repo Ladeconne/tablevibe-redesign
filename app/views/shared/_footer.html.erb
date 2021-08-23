@@ -1,0 +1,21 @@
+<footer id="footer">
+  <div class="inner">
+    <div class="top">
+      <%# Logo link to home %>
+      <%= link_to :root, id:"link-home" do %>
+        <%= image_tag "logo.png", class:"navbar-logo" %>
+      <% end %>
+      <%# navigation links %>
+      <div class="nav-links">
+        <%= link_to  "How it works", :root, class:"button button-clear" %>
+        <%= link_to  "Pricing", :root, class:"button button-clear" %>
+        <%= link_to  "Updates", :root, class:"button button-clear" %>
+        <%= link_to  "Support", :root, class:"button button-clear" %>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>©Tablevibe. All rights reserved</p>
+      <p>This is a copy of ©Tablevibe website created for personal purpose and display on developer portfolio.</p>
+    </div>
+  </div>
+</footer>
