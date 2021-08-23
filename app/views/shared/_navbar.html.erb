@@ -1,16 +1,24 @@
-<div class="navbar-container">
-  <%# Logo link to home %>
-  <%= link_to :root do %>
-    <%= image_tag "logo.png", class:"navbar-logo" %>
-  <% end %>
-  <div class="nav-links">
-    <%= link_to  "How it works", :root %>
-    <%= link_to  "Pricing", :root %>
-    <%= link_to  "Updates", :root %>
-    <%= link_to  "Support", :root %>
-  </div>
-  <div class="nav-devise">
-    <%= link_to  "Log in", new_user_session_path %>
-    <%= link_to  "Sign up",  new_user_registration_path %>
+<div id="navbar">
+  <div class="nav-wrapper">
+    <%# Logo link to home %>
+    <%= link_to :root, id:"link-home" do %>
+      <%= image_tag "logo.png", class:"navbar-logo" %>
+    <% end %>
+    <%# navigation links %>
+    <div class="nav-links">
+      <%= link_to  "How it works", :root, class:"button button-clear" %>
+      <%= link_to  "Pricing", :root, class:"button button-clear" %>
+      <%= link_to  "Updates", :root, class:"button button-clear" %>
+      <%= link_to  "Support", :root, class:"button button-clear" %>
+    </div>
+    <%# Authentification link %>
+    <div class="nav-devise">
+      <% if user_signed_in? %>
+        <%= link_to "Log out", destroy_user_session_path, class:"button button-clear", method: :delete%>
+      <% else %>
+        <%= link_to  "Log in", new_user_session_path, class:"button button-clear"%>
+        <%= link_to  "Sign up",  new_user_registration_path, class:"button button-outline"%>
+      <% end %>
+    </div>
   </div>
 </div>
