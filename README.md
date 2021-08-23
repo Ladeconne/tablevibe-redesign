@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+### Portfolio project: Tablevibe redesign
+Recreate the website https://www.tablevibe.co/ using ruby on rails
+Simple design element created with CSS framework Milligram
