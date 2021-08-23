@@ -1,3 +1,1 @@
-# tablevibe-redesign
-Portfolio project. Redesign of Tablevibe website using milligram for style
-Original website url: https://www.tablevibe.co/
+Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
