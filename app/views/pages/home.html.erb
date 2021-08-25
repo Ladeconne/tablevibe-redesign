@@ -1,18 +1,37 @@
 <div id="home">
-  <div id="banner" class="row">
-    <div class="content column column-60">
+  <div class="home-card">
+    <div class="content">
       <h1>The #1 platform for restaurants to <strong>capture feedback, drive satisfaction</strong> and <strong>accelerate direct sales.</strong></h1>
       <div class="button-wrapper">
         <%= link_to  "Get started for free!", :root, class:"button button-outline" %>
         <%= link_to  "Book a demo", :root, class:"button" %>
       </div>
     </div>
-    <div class="img-wrapper column column-40">
+    <div class="img-wrapper">
       <%= image_tag "banner-phone"%>
     </div>
   </div>
   <div id="customers">
     <h3>Generated over 120.000 customer insights for leading restaurants globally</h3>
     <%= render  "shared/infinite_slide" %>
+  </div>
+  <div class="home-card revert">
+    <div class="img-wrapper">
+      <%= image_tag "delivery-gift"%>
+    </div>
+    <div class="content">
+      <h2><strong>Capture dine-in and delivery feedback</strong></h2>
+      <p>Your dine-in and delivery customers complete a fun, 1-minute feedback survey on their phone. In return they get a loyalty incentive to be redeemed for a commission free dine-in or pickup order.</p>
+    </div>
+  </div>
+  <div class="home-card">
+    <div class="content">
+      <h2><strong>Learn what makes your guests happy</strong></h2>
+      <p>All your customer feedback shows up in a simple-to-use performance dashboard. Understand which venues and waiters do well and directly contact customers to learn more. Act on feedback and see your customer ratings improve over time.</p>
+      <%= link_to  "See demo dashboard!", :root, class:"button" %>
+    </div>
+    <div class="img-wrapper">
+      <%= image_tag "dashboard"%>
+    </div>
   </div>
 </div>
