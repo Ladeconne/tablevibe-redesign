@@ -24,8 +24,26 @@
       <p>Your dine-in and delivery customers complete a fun, 1-minute feedback survey on their phone. In return they get a loyalty incentive to be redeemed for a commission free dine-in or pickup order.</p>
     </div>
   </div>
-  <div id="carousel">
+  <div data-controller="carousel" class="swiper-container w-25 my-5"
+    data-carousel-options-value='{
+    "autoplay": { "delay": 2500,
+                "disableOnInteraction": "false"},
+    "pagination": { "el": ".swiper-pagination",
+                    "dynamicBullets": "true" },
+    "navigation": { "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"}}'>
+  <!-- Pagination (... or 1/10 or progress bar) -->
+  <div class="swiper-pagination"></div>
+
+  <!-- Navigation buttons (< >) -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-wrapper">
+    <!-- Slides -->
     <%= render  'layouts/testimonial', customers: @customers %>
+  </div>
+</div>
+
   </div>
   <div class="home-card">
     <div class="content">
