@@ -1,3 +1,37 @@
 @media (min-width:"767px") {
-
+  #testimonial {
+    .grid {
+      width: 100%;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 2fr max-content 4fr;
+      .c-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 40px 50px;
+        font-size: 1rem;
+        .c-logo {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .c-picture{
+        img {
+          height: 300px;
+        }
+      }
+      .c-testimonial{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 30px 20px;
+        p {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
 }

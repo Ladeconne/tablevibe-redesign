@@ -1,0 +1,23 @@
+<div id="testimonial">
+  <% @customers.each do |customer| %>
+    <div class="grid">
+      <div class="column c-details">
+        <%= image_tag customer.logo_url, class:"c-logo"%>
+        <p>
+          <strong><%= customer.name %>,
+          <br>
+          </strong><%= customer.job_title %> at <%= customer.company %>
+        </p>
+      </div>
+      <div class="column c-picture">
+        <%= image_tag customer.picture_url %>
+      </div>
+      <div class="column c-testimonial">
+        <%= image_tag "quote" %>
+        <p>
+          <%= customer.testimonial %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>
