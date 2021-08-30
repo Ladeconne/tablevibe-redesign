@@ -2,13 +2,19 @@
 #home {
   max-width: 100%;
   padding: 0 12px 40px;
+  .button {
+    width: 100%;
+    @media (min-width:"767px") {
+      width: 220px;
+    }
+  }
 }
 
-.button {
-  width: 100%;
-}
 #banner {
-    margin-top: 170px;
+  margin-top: 170px;
+  @media (min-width:"767px") {
+     margin-top: 170px;
+  }
 }
 .home-card {
   display: grid;
@@ -32,6 +38,11 @@
       object-fit: cover;
       object-position: center;
     }
+  }
+  @media (min-width:"767px") {
+     grid-template-columns: 7fr 5fr;
+     width: 90%;
+     margin: 200px auto;
   }
 }
 
