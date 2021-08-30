@@ -32,18 +32,16 @@
                     "dynamicBullets": "true" },
     "navigation": { "nextEl": ".swiper-button-next",
                     "prevEl": ".swiper-button-prev"}}'>
-  <!-- Pagination (... or 1/10 or progress bar) -->
-  <div class="swiper-pagination"></div>
+    <!-- Pagination (... or 1/10 or progress bar) -->
+    <div class="swiper-pagination"></div>
 
   <!-- Navigation buttons (< >) -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-wrapper">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-wrapper">
     <!-- Slides -->
-    <%= render  'layouts/testimonial', customers: @customers %>
-  </div>
-</div>
-
+      <%= render  'layouts/testimonial', customers: @customers %>
+    </div>
   </div>
   <div class="home-card">
     <div class="content">
@@ -53,6 +51,47 @@
     </div>
     <div class="img-wrapper">
       <%= image_tag "dashboard"%>
+    </div>
+  </div>
+  <div id="grow">
+    <%= image_tag "burger", class:"section-img"%>
+    <h2 class="section-title">Grow direct revenue</h2>
+    <div class="cards">
+      <div class="card">
+        <%= image_tag "moneybag"%>
+        <h3><strong>Save up to 40% in delivery commissions</strong></h3>
+        <p>
+          Put a Tablevibe QR code on your food
+          <br>
+          delivery packages to unlock customer
+          <br>
+          data and accelerate direct re-orders.
+        </p>
+      </div>
+      <div class="card">
+        <%= image_tag "spaceship"%>
+        <h3><strong>Boost repeat business</strong></h3>
+        <p>
+          In return for their honest feedback,
+          <br>
+          customers get a reward for their next
+          <br>
+          order or visit. We delivered 1000s of
+          <br>
+          repeat customers to existing partners
+        </p>
+      </div>
+      <div class="card">
+        <%= image_tag "google-logo"%>
+        <h3><strong>Get better Google reviews</strong></h3>
+        <p>
+          Improve your online reputation by
+          <br>
+          encouraging positive guests to share
+          <br>
+          their feedback directly on Google
+        </p>
+      </div>
     </div>
   </div>
 </div>
