@@ -75,3 +75,27 @@
     }
   }
 }
+
+#partners {
+  margin: 6rem 0;
+  .section-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .section-img {
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      font-weight: 800;
+    }
+  }
+  .partner-links {
+    background-color: white;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+}
