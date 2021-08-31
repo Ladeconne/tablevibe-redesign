@@ -1,0 +1,20 @@
+<div id="pricing">
+  <div id="title">
+    <div class="over">
+      <%= image_tag "burger" %>
+    </div>
+    <h1>Plans to suit <strong>any</strong><br>type of <strong>restaurant</strong></h1>
+    <h3>Try 30 days for free. Cancel or change your plan any time.</h3>
+    <div class="under">
+      <%= image_tag "pizza" %>
+    </div>
+  </div>
+  <div id="subscription">
+    <%= render  "layouts/pricing-card", price: [79, 59], offer: "Dine in & Delivery",
+    options: ["check", "check", "check", "check", "check", "check", "check", "check"] %>
+    <%= render  "layouts/pricing-card", price: [59, 39], offer: "Dine in",
+    options: ["check", "cross", "check", "check", "check", "check", "check", "check"] %>
+    <%= render  "layouts/pricing-card", price: [59, 39], offer: "Delivery",
+    options: ["cross", "check", "check", "check", "check", "check", "check", "check"] %>
+  </div>
+</div>

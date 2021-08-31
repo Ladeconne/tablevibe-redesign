@@ -1,0 +1,20 @@
+<div class="pricing-card">
+  <h1><%= offer %></h1>
+  <h2><span class="price">$<%= price[0] %></span> per month</h2>
+  <h3>+<span class="price">$<%= price[1] %></span><span> per additional location</span></h3>
+  <div class="features-list">
+    <ul>
+      <li class=<%= options[0] %>>Capture dine-in experiences</li>
+      <li class=<%= options[1] %>>Capture delivery experiences</li>
+      <li class=<%= options[2] %>>Unlimited reviews</li>
+      <li class=<%= options[3] %>>Unlimited users</li>
+      <li class=<%= options[4] %>>Get customer contact details</li>
+      <li class=<%= options[5] %>>Compare multiple venues</li>
+      <li class=<%= options[6] %>>Customize design</li>
+      <li class=<%= options[7] %>>Customize survey questions</li>
+    </ul>
+  </div>
+  <div>
+    <%= link_to  "30 days free trial", :root, class:"button" %>
+  </div>
+</div>
