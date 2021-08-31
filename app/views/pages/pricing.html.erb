@@ -10,11 +10,16 @@
     </div>
   </div>
   <div id="subscription">
-    <%= render  "layouts/pricing-card", price: [79, 59], offer: "Dine in & Delivery",
-    options: ["check", "check", "check", "check", "check", "check", "check", "check"] %>
-    <%= render  "layouts/pricing-card", price: [59, 39], offer: "Dine in",
-    options: ["check", "cross", "check", "check", "check", "check", "check", "check"] %>
-    <%= render  "layouts/pricing-card", price: [59, 39], offer: "Delivery",
-    options: ["cross", "check", "check", "check", "check", "check", "check", "check"] %>
+    <div class="valuepack">
+      <%= image_tag "valuepack" %>
+    </div>
+    <div class="grid-sub">
+      <%= render  "layouts/pricing-card", price: [59, 39], offer: "Dine in",
+      options: ["check", "cross", "check", "check", "check", "check", "check", "check"], central: "" %>
+      <%= render  "layouts/pricing-card", price: [79, 59], offer: "Dine in & Delivery",
+      options: ["check", "check", "check", "check", "check", "check", "check", "check"], central: "central-card" %>
+      <%= render  "layouts/pricing-card", price: [59, 39], offer: "Delivery",
+      options: ["cross", "check", "check", "check", "check", "check", "check", "check"], central: "" %>
+    </div>
   </div>
 </div>
