@@ -1,0 +1,105 @@
+#how-it-works{
+  max-width: 100%;
+  padding: 0 12px 40px;
+
+  #title {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+      font-weight: 500;
+      text-align: center;
+      max-width: 800px;
+    }
+    @media (min-width:"767px") {
+      margin-top: 100px;
+    }
+    img {
+      position: relative;
+      z-index: -2;
+      top: -40px;
+    }
+  }
+  #explanations{
+    p{
+      font-size: 2rem;
+    }
+    .row-step{
+      margin-bottom: 200px;
+      h2{
+        font-weight: 700;
+      }
+      .step-two-rows{
+        display: flex;
+        flex-direction: column;
+      }
+      .step-box-wrapper{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 8px;
+        padding: 2rem;
+        max-width: 572px;
+      }
+      .step-number{
+        position: absolute;
+        img{
+          height: 140px;
+          position: relative;
+          z-index: -1;
+          top: -12rem !important;
+          left: 20rem;
+        }
+      }
+      .curly-lines {
+        display: none;
+      }
+      .step-box-bottom-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        margin-top: 4rem;
+        padding: 1rem;
+        .step-box-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 8px;
+          padding: 1rem;
+          img{
+            min-height: 125.5px;
+          }
+          p {
+            margin: auto;
+            font-weight: 500;
+          }
+        }
+      }
+      @media (min-width:"767px") {
+        padding-left: 80px;
+        padding-right: 80px;
+        .curly-lines{
+          display: absolute;
+        }
+      }
+    }
+    .right {
+      @media (min-width:"767px") {
+        justify-content: flex-end !important;
+        .step-number{
+          img{
+            left: -14rem !important;
+          }
+        }
+      }
+    }
+  }
+}
