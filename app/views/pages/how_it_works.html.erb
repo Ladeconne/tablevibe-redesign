@@ -5,6 +5,7 @@
     <%= image_tag "woman-missile" %>
   </div>
   <div id="explanations">
+  <%# Step 1 %>
     <div class="row row-step">
       <div class="step-number">
         <%= image_tag "number1"%>
@@ -13,8 +14,11 @@
         <h2>Get started</h2>
         <p>Sign up to experience the benefits of Tablevibe. We offer relevant solutions for restaurants and cloud kitchens of any size.</p>
       </div>
-      <%= image_tag "curly-lines-lr", class:"curly-lines"%>
+      <div class="curly-lines">
+        <%= image_tag "curly-lines-lr"%>
+      </div>
     </div>
+    <%# Step 2 %>
     <div class="row row-step right">
       <div class="step-number">
         <%= image_tag "number2"%>
@@ -34,7 +38,87 @@
               <p>Delivery</p>
             </div>
         </div>
-        <%= image_tag "curly-lines-rl", class:"curly-lines"%>
+        <div class="curly-lines right">
+          <%= image_tag "curly-lines-rl"%>
+        </div>
+      </div>
+    </div>
+    <%# Step 3 %>
+    <div class="row row-step">
+      <div class="step-number">
+        <%= image_tag "number3"%>
+      </div>
+      <div class="step-box-wrapper">
+        <h2>Define your reward</h2>
+        <p>
+          You decide what reward your customers receive in exchange for their feedback. Popular options include “$5 off on your next visit” and “10% discount on any new takeaway order”.
+          <br>
+          Reward conditions are often used to drive traffic to your restaurant during off-peak hours or promote direct orders. In example: “Reward is valid Mon-Thu” or “Reward is valid for takeaway orders”.
+        </p>
+        <div class="step-box-img">
+          <%= image_tag "gift", id:"gift-icon" %>
+        </div>
+      </div>
+      <div class="curly-lines">
+        <%= image_tag "curly-lines-lr", id:"curly3"%>
+      </div>
+    </div>
+    <%# Step 4 %>
+    <div class="row row-step right">
+      <div class="step-number">
+        <%= image_tag "number4"%>
+      </div>
+      <div class="step-box-wrapper">
+        <h2>
+          Invite customers
+          <br>
+          to share feedback
+        </h2>
+        <p>
+          Simply add a Tablevibe QR code on your food delivery packages or present it to your dine-in customers. Completing the survey takes 1minute. Positive customers are prompted to share their feedback on Google. It's a great way to capture feedback and boost your online reputation at the same time.
+        </p>
+        <div class="step-box-img">
+          <%= image_tag "delivery", id:"delivery-icon" %>
+        </div>
+        <div class="curly-lines right">
+          <%= image_tag "curly-lines-rl"%>
+        </div>
+      </div>
+    </div>
+    <%# Step 5 %>
+    <div class="row row-step">
+      <div class="step-number">
+        <%= image_tag "number5"%>
+      </div>
+      <div class="step-box-wrapper">
+        <h2>Drive customer satisfaction</h2>
+        <p>
+          All your customer feedback shows up in an easy-to-use performance dashboard. Understand which venues and waiters do well and directly contact customers to learn more.
+          <br>
+          <br>
+          Act on the insights and see your customer ratings improve over time. You can also add customer email addresses to your email marketing lists.
+        </p>
+        <div class="step-box-img">
+          <%= image_tag "dashboard-small", id:"dashboard-icon" %>
+        </div>
+      </div>
+      <div class="curly-lines">
+        <%= image_tag "curly-lines-lr", id:"curly5"%>
+      </div>
+    </div>
+    <%# Step 6 %>
+    <div class="row row-step right">
+      <div class="step-number">
+        <%= image_tag "number6"%>
+      </div>
+      <div class="step-box-wrapper">
+        <h2>Redeem loyalty rewards</h2>
+        <p>
+          Customers receive a reward voucher via email upon survey completion. You decide when and where customers can redeem their reward.
+          <br>
+          <br>
+          You can share a discount code for your preferred online ordering portal. To redeem a dine-in reward, simply scan the reward voucher in the email with any phone or tablet. Your waiters can also see what feedback the customer provided and follow up on any compliments or suggestions.
+        </p>
       </div>
     </div>
   </div>
