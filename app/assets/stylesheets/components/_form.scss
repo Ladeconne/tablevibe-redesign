@@ -1,0 +1,15 @@
+.white-card{
+  background-color: white;
+  padding: 2rem;
+  width: 95%;
+  margin: 10rem auto;
+  border-radius: 16px;
+  box-shadow: -1px 15px 49px 0px rgba(187,187,187,0.75);
+  -webkit-box-shadow: -1px 15px 49px 0px rgba(187,187,187,0.75);
+  -moz-box-shadow: -1px 15px 49px 0px rgba(187,187,187,0.75);
+
+  @media (min-width:767px) {
+    width: 40%;
+    margin: 5rem auto;
+  }
+}
