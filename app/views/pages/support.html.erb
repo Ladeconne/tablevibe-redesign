@@ -1,0 +1,139 @@
+<div id="support">
+  <%# Intro/ title %>
+  <div id="title">
+    <div class="row">
+      <h1>Frequently Asked Questions</h1>
+      <div class="title-img">
+        <%= image_tag "question-mark" %>
+      </div>
+    </div>
+  </div>
+  <%# Q&A main wrapper %>
+  <div class="q-and-a-main-wrapper">
+    <%# GETTING STARTED %>
+    <div class="q-and-a-cat-wrapper">
+      <h2>Getting Started</h2>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How long is the free trial period?</button>
+        <div class="collapsible-content">
+          <p>You will get a 30 day free trial for your first subscription.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How do I add a new venue?</button>
+        <div class="collapsible-content">
+          <p>Simply log in to your Tablevibe account, select Surveys>QR codes. There you can add a new venue.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How do I change details of my staff members?</button>
+        <div class="collapsible-content">
+          <p>Simply log in to your Tablevibe account. Toggle to the dine-in experience on the top right hand corner and select Surveys>Settings>Staff Members. Here you can add staff members and add them to each venue.</p>
+        </div>
+      </div>
+    </div>
+    <%# USING TABLEVIBE %>
+    <div class="q-and-a-cat-wrapper">
+      <h2>Using Tablevibe</h2>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How many venues can I add to Tablevibe?</button>
+        <div class="collapsible-content">
+          <p>You can add as many venues as you like. You are being billed per venue at a discounted rate for each additional venue.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">Where can I find your terms and conditions?</button>
+        <div class="collapsible-content">
+          <p>Please find our terms and conditions on <%= link_to "www.tablevibe.co/terms.", :root %></p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How can I reset or change my password?</button>
+        <div class="collapsible-content">
+          <p>Visit <%= link_to "www.tablevibe.co/login", new_user_session_path %>, click on “Forgot your password?” and follow the instructions. If you’re logged in, please log out first before visiting <%= link_to "www.tablevibe.co/login", new_user_session_path %></p>
+        </div>
+      </div>
+    </div>
+    <%# Account, subscription and invoices %>
+    <div class="q-and-a-cat-wrapper">
+      <h2>Account, subscription and invoices</h2>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">When will I be billed?</button>
+        <div class="collapsible-content">
+          <p>You are offered a standard 30-day free trial which can be cancelled at any time by visiting Account>Subscription. After your free trial you will be billed for the first month. Your subscription will get renewed and billed automatically using this same cadence.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How will I get billed if my subscription changes half way through a billing cycle (i.e. by adding venues or upgrading)</button>
+        <div class="collapsible-content">
+          <p>
+            You will only be charged for the time you use our products. Tablevibe automatically calculates the days remaining on your billing cycle and charges you on a prorated basis. These pro-rated costs will be billed directly. See examples below.
+            <br>
+            Monthly billing example: Your billing cycle starts on May 30th. You add a new venue to your delivery & dine-in account on May 15th. This means you will receive a one-off charge of $59*(15/30)=$29.50. Your next billing cycle automatically includes the new venue.
+          </p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">What payment options does Tablevibe offer?</button>
+        <div class="collapsible-content">
+          <p>Tablevibe offers all major credit and debit cards. We currently do not support wire transfers or direct debit payment options by default. If this is an issue to you, please contact No one, because this is not the real website ;); we’re happy to evaluate if we can accommodate your preferred payment type.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">How do I switch between plans?</button>
+        <div class="collapsible-content">
+          <p>Currently it is possible to upgrade to both experience types or cancel your subscription under Account>subscription. You can also remove venues from your account under Survey>QR codes. These will no longer be billed on your next billing cycle. If you wish to switch plans please reach out to No one, because this is not the real website ;)</p>
+        </div>
+      </div>
+    </div>
+    <%# Best practices %>
+    <div class="q-and-a-cat-wrapper">
+      <h2>Best practices</h2>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">What is a good rating?</button>
+        <div class="collapsible-content">
+          <p>We generally consider a 5/5 star rating a good rating. This is why only guests who provide a 5 star overall rating have the option to leave a Google review via the Tablevibe survey.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">What is a good incentive?</button>
+        <div class="collapsible-content">
+          <p>The best converting incentives are absolute discounts (i.e. $5 discount).</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">What is a good QR card?</button>
+        <div class="collapsible-content">
+          <p>A good QR card mentions the incentive clearly and is displayed in a prominent place. Make sure that the QR code does not have to be broken to unwrap the food.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">What is a good response rate?</button>
+        <div class="collapsible-content">
+          <p>We see response rates typically vary between 5-25% depending on the incentive, the messaging and the commitment from your staff to call out the gift waiting for them.</p>
+        </div>
+      </div>
+      <div class="toggle-wrapper">
+        <button type="button" class="collapsible">Any other questions?</button>
+        <div class="collapsible-content">
+          <p>If you have further questions or concerns, please do not hesitate to reach us via email at Noone.com, because this is not the real website ;) or by clicking the support chat box on the lower right side of your screen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cta">
+      <div id="call-to-action">
+        <h2>Get started with Tablevibe today!</h2>
+        <p>
+          We will have your surveys up and running in minutes. If you have any
+          <br>
+          more questions please don't hesitate to reach out or book a demo.</p>
+        <div class="button-wrapper">
+          <%= link_to  "Get started for free!", :root, class:"button" %>
+          <%= link_to  "Book a demo", :root, class:"button button-outline " %>
+        </div>
+        <%= image_tag "woman-phone" %>
+      </div>
+    </div>
+</div>
+<%= javascript_pack_tag 'collapsible' %>

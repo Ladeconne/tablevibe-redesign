@@ -15,7 +15,7 @@
           <li class="nav-list-item"><%= link_to  "How it works", how_it_works_path, class:"button button-clear" %></li>
           <li class="nav-list-item"><%= link_to  "Pricing", pricing_path, class:"button button-clear" %></li>
           <li class="nav-list-item"><%= link_to  "Updates", :root, class:"button button-clear" %></li>
-          <li class="nav-list-item"><%= link_to  "Support", :root, class:"button button-clear" %></li>
+          <li class="nav-list-item"><%= link_to  "Support", support_path, class:"button button-clear" %></li>
         </div>
         <div class="nav-devise">
           <% if user_signed_in? %>
@@ -40,7 +40,7 @@
       <%= link_to  "How it works", how_it_works_path, class:"button button-clear" %>
       <%= link_to  "Pricing", pricing_path, class:"button button-clear" %>
       <%= link_to  "Updates", :root, class:"button button-clear" %>
-      <%= link_to  "Support", :root, class:"button button-clear" %>
+      <%= link_to  "Support", support_path, class:"button button-clear" %>
     </div>
     <%# Authentification link %>
     <div class="nav-devise">
