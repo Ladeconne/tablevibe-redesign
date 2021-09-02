@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/pricing', to: 'pages#pricing', as: :pricing
   get '/how-it-works', to: 'pages#how_it_works', as: :how_it_works
+  get '/support', to: 'pages#support', as: :support
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
